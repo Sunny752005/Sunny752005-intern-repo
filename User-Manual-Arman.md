@@ -32,9 +32,20 @@ What are some quirks or things to know about your work style? (e.g., need time t
 🛠️ Task
 
 Write your User Manual for Me using the structure below.
-- I work best where there is an open and clear form of comunication with other team members. 
-- I prefer having a clear and set goal to achive everytime I am doing a task within set time parameters
-- Once I am locked in, I work for extensive periods of time without distractions and achive my goal.
+
+- User Manual for Arman :::::
+
+- I am working as a Front end developer Intern at Focus Bear and my role involves enahving UI and UX by updating features. 
+- I will be working on the UI design of the App to ensure usability and and improving user experence on the app.
+- I work best when I have a clear goal and timeline to finish it, siting in a quite and distraction free space.
+- I strugle when expectations and instructions are vague and being inturupted when locked in into a high focus zone.
+- I prefer clear messages and in person feedback that helps me improve my work. 
+- The best way to reach me is to dm me on discord or email me. If I am hard to reach through those chaneels a call would be a better alternative.
+- I work best in a team that is well structured and has a clear communicationc chaneel where updates are sent.
+- My biggest pet-peeve in teams is when there is miscommunications and last minutes upodates draging others down.
+- I stay focused in a quite space with minimal distractions and a clear goal in mind. 
+- best way to support me to stay focused is giving clear objective and seting a check in to add accountability.
+- One misunderstanding people may have is that I am being quite and thus am disengaged, however in reality I am hyper focused and chipping away at the work. 
 
 Share it with your manager or teammates so they can better understand how to work with you.
 - Will do
