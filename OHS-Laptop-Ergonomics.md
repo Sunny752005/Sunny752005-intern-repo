@@ -44,3 +44,7 @@ Try using posture and movement reminders for a full workday and note any improve
 
 Document at least one workspace change or habit adjustment you made.
 -  I started using an external mouse to reduce wrist strain and use an adjustable chair to raise it to a good height and which supports my lower back.
+
+
+- Personal improvement: After having used the timers for breaks in between work, the real change I norticed was lower back pain as I was able to streach it out and decompress my spine. Second big diffrence is the lower eye strain I experence. 
+
