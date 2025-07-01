@@ -38,7 +38,10 @@ In my opinion the sprint planning is the most essential part of the agile work c
 🛠️ Task
 
 Attend a stand-up meeting and observe how updates are shared.
+- I attended the Focusbear frontend stand up meeting yesterday on the 30th of June, only attented by me and Ashok. And I observered Ashok gioving updates and I gave an update on my progress on the on boarding work as well, also mentioning how health issues acted as a blocked for me and slowed down my progress.
 
 Participate in a retrospective or review past notes from one.
+I was going over the summary notes fromt he previous meeting it was shocking how all the details were captured so accuratly and it was so well organised. 
 
 Document one change you can make to improve your team collaboration.
+Since I am doing the onboarding right now and I am unable to work on the actual app. I do not have any updates worth bringing up on discord, however I still observe how others communicate and I am learing how they give updates so that I can match that when I do. 
