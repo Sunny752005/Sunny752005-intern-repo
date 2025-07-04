@@ -36,7 +36,12 @@ The Kaban principles can help me break down tasks and
 🛠️ Task
 
 Check out Focus Bear’s Kanban board and note how tasks are structured. (Hint: Look in GitHub Projects.)
+![alt text](kanban_board.png)
+
+- The kanban board is structured in a very sequential manner almost like a waterfall work methodology, where each task is completed in a predetermined sequence. The task are complied in the Backlog innitialy which means the item has not yet been worked on and/or isnt ready to be worked on as of now. After that is the Ready section which cosists of tasks that are ready to be picked up by a team member however have not yet been started. Then comes the in progress section which has all the tasks that are currently being worked on by a team member. The in review sections consists of item that have been completed however the works needs to be reviewed before being determined complete/ Finially it is the completed section which has all the completed items. 
 
 Move at least one task through the Kanban process and update its status correctly.
+- I am currently working on the onboarding and do not have direct acess to the kanban board or any task that is being worked on by the team. Thus I am unable to move the kanban board item from one stage to another. 
 
 Identify one way you can improve task tracking in your role.
+One way I can improve the tracking of items once I have access to the Focus Bear Kanban board is by adding more descriptive titles and summarys for when items are moved from one stage to another. More detailed notes/titles will significantly enhance the qulaity of the kanban board as it will add clarity and help team members understand what the task involved and what has been done.
