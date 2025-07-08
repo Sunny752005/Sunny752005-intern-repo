@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import axios from 'axios';
 
 const generateRequestId = () => `req-${Date.now()}`;
@@ -33,38 +32,4 @@ api.interceptors.response.use(
   }
 );
 
-
-function TestApi() {
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await api.post('/posts', {
-          title: 'Test Post',
-          body: 'Hello from Focus Bear!',
-          userId: 123
-        });
-        console.log('Response:', res.data);
-      } catch (err) {
-        console.error('Request failed:', err.message);
-      }
-    };
-
-    fetchData();
-
-    return () => controller.abort();
-  }, []);
-
-  return <div>Sent POST request (check console)</div>;
-}
-
-
-function App() {
-  return (
-    <div className="App">
-      <h2>Axios Test</h2>
-      <TestApi />
-    </div>
-  );
-}
-
-export default App;
+export { api, controller };
