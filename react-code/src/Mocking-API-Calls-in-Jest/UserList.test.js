@@ -1,14 +1,15 @@
+import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import UserList from './UserList';
 import * as api from './api';
 
-// mock the entire module
+
 jest.mock('./api');
 
 describe('UserList component', () => {
   test('displays users after successful API call', async () => {
-    // mock successful return
+
     api.fetchUsers.mockResolvedValue([
       { id: 1, name: 'Sunny' },
       { id: 2, name: 'Jeremy' }
