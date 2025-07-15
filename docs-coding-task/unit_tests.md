@@ -1,3 +1,5 @@
+/////Testing Redux with Jest/////
+
 What was the most challenging part of testing Redux?
 - The most challenging part was getting jest to work properly with Javascript. I used import and export but jest didn't support that at first so I had to set up babel and create some configure files such as babel.config.js and jest.config.mjs for example, to fix the issue.  
 
@@ -8,3 +10,13 @@ How do Redux tests differ from React component tests?
 
 
 
+
+
+/////// Mocking API Calls in Jest /////////
+
+Why is it important to mock API calls in tests?
+- Mocking APIs are important because they tell us how the app behaves without actually using a real server. Real APIs are at the risk of failue due to numerious reasons such as server and internet issues. However using the jest.mock() we can control the output of the API, and it is more stable, flexible and faster than the real one. 
+
+What are some common pitfalls when testing asynchronous code?
+- A common issues when testing asynchronous code is not waiting long enough for async updates to conclude, an example of this would be using the expect() too early belore the data has appeared, whoch causes the test to fail even if the code is done right. 
+- Another issue is forgeting to mock the apis which results in the test calling the real API which is not only slower but can also lead to unpredictable results.  
