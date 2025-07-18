@@ -32,3 +32,15 @@ What are the benefits of using React Testing Library instead of testing implemen
 
 What challenges did you encounter when simulating user interaction?
 - Innitially, my biggest challenge was missing/ wrong matches such as .toBeInTheDocument(). I forgot to import them from @testing-library/jest-dom, which resulted in my test failing innitially. Another challenge was making sure that the component was imported and renders correctly. One of my files was named js instead of jsx which too caused a test to fail.
+
+
+
+
+////////Introduction to Unit Testing with Jest //////////
+
+Why is automated testing important in software development?
+- Automated Testing ensures that the code functions correctly even after chnages has been made to it, it saves time by running tests in a more time efficient manner and helps catch bugs early before they cause significant challenges later on in the development.
+
+
+What did you find challenging when writing your first Jest test?
+- I innitially struggled with how Jest's syntac works and how I am supposed to structure the test, and I also had to make sure that the function was exported correctly. However when I understood how to write the expect() statements it bacame a bit more simpler. 
