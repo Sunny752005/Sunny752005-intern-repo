@@ -44,3 +44,16 @@ Why is automated testing important in software development?
 
 What did you find challenging when writing your first Jest test?
 - I innitially struggled with how Jest's syntac works and how I am supposed to structure the test, and I also had to make sure that the function was exported correctly. However when I understood how to write the expect() statements it bacame a bit more simpler. 
+
+
+
+//////////Implementing Internationalization with i18next////////////////
+
+What challenges did you face while setting up i18next?
+- They key challenge I faced was when the file path for i18n was inaccurate and it was causing an error over and over again and I was unable to figure out the issue. Analysing the directory structure and then using the relative path ultimatly I was able to figure out the issue and fix it. 
+
+Why is it important to use a library like i18next instead of manually handling translations?
+- The use of the i18next library simplifies the process for translation, specifically for apps. It consists of features such as language detechtion and namespace suppoer and fallback which would be extreamly dificult and subject to errors is I were to implement them manually. 
+
+How would you handle dynamic content (e.g., user-generated text) in a multilingual app?
+- I would not translate user-generated content automatically. I would instead store it and display it in the language it was inputeded. If translation were neccesary, I would use external APIs such as google translate and clearly display that the content was auto translated to mitigate any consusion. 
