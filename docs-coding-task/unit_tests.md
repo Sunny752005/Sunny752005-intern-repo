@@ -20,3 +20,15 @@ Why is it important to mock API calls in tests?
 What are some common pitfalls when testing asynchronous code?
 - A common issues when testing asynchronous code is not waiting long enough for async updates to conclude, an example of this would be using the expect() too early belore the data has appeared, whoch causes the test to fail even if the code is done right. 
 - Another issue is forgeting to mock the apis which results in the test calling the real API which is not only slower but can also lead to unpredictable results.  
+
+
+
+
+
+////////Testing React Components with Jest & React Testing Library/////////
+
+What are the benefits of using React Testing Library instead of testing implementation details?
+- React Test library tests how users interact with the app instead of how the code is written, this enhances the reliability of the tests as the test is less likely to break when the code is updated. By focusing more on the UI elements such as button clicks and whats shown on the screen, it checks where the app behaves as expected. 
+
+What challenges did you encounter when simulating user interaction?
+- Innitially, my biggest challenge was missing/ wrong matches such as .toBeInTheDocument(). I forgot to import them from @testing-library/jest-dom, which resulted in my test failing innitially. Another challenge was making sure that the component was imported and renders correctly. One of my files was named js instead of jsx which too caused a test to fail.
