@@ -1,11 +1,11 @@
 import React from 'react';
-import TestApi from './TestApi';
+import Greeting from './Implementing-Internationalization-with-i18next/Greeting';
 
 function App() {
   return (
     <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1>Axios API Test</h1>
-      <TestApi />
+      <h1>i18next Test</h1>
+      <Greeting />
     </div>
   );
 }
