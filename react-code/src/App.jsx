@@ -1,11 +1,11 @@
 import React from 'react';
-import ParentComponent from './Preventing-Unnecessary-Renders-with-useCallback/ParentComponent';
+import ExpensiveCalculation from './Optimizing-Performance-with-useMemo/ExpensiveCalculation';
 
 function App() {
   return (
     <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1>useCallback Test</h1>
-      <ParentComponent />
+      <h1>useMemo Test</h1>
+      <ExpensiveCalculation />
     </div>
   );
 }
