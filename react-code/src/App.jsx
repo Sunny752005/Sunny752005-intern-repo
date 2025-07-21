@@ -1,11 +1,11 @@
 import React from 'react';
-import ExpensiveCalculation from './Optimizing-Performance-with-useMemo/ExpensiveCalculation';
+import EffectDemo from './Understanding-React-Hooks-useEffect/EffectDemo';
 
 function App() {
   return (
     <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1>useMemo Test</h1>
-      <ExpensiveCalculation />
+      <h1>useEffect Test</h1>
+      <EffectDemo />
     </div>
   );
 }
