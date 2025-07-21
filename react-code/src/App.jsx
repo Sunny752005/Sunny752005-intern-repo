@@ -1,11 +1,11 @@
 import React from 'react';
-import MyForm from './Handling-Forms-with-Formik/MyForm';
+import ParentComponent from './Preventing-Unnecessary-Renders-with-useCallback/ParentComponent';
 
 function App() {
   return (
     <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1>Formik Form</h1>
-      <MyForm />
+      <h1>useCallback Test</h1>
+      <ParentComponent />
     </div>
   );
 }
