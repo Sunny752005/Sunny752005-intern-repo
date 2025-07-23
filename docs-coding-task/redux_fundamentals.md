@@ -1,0 +1,3 @@
+What are the benefits of using selectors instead of directly accessing state?
+- using selectiord in redux makes the code more clean and organised by separating the logic for accessing the state from the components. Rather than reaching into the state every time, you create a reuseable function that retuen the part of the state which is needed. This makes the code easier to maintain and test by reducing repetition and improving readability. Selectors also reduce bugs when the shape of the state changes because the delectos is only updated instead of all the components that use that part of the state.
+
