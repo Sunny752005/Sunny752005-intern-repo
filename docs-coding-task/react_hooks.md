@@ -22,3 +22,18 @@ When should you avoid using useMemo?
 
 What happens if you remove useMemo from your implementation?
 - If useMemo is removed, the expensive function will run everytime the component is re-rendered even if nothing has changed. This can cause slower performance especially if the function takes a long time to run.
+
+
+
+///////Understanding React Hooks: useEffect///////
+
+When should you use useEffect instead of handling logic inside event handlers?
+- The useEffect should be used when something needs to happen automatically based on changes in the state or props and not just when the user takes an action. An example of this would be: if data needs to be retrived/accessed as soon as the component loads or watch for changes in a value, then useEffecect would be the right tool to use. Whereas event handlers are good for when the user makes any changes/ takes an action. 
+
+What happens if you don’t provide a dependency array?
+- If a dependency array is not provided to a useEffect it will run after every single render, regardless of what changes have occured. Although it may be fine but it leads to unnecessary function calls. Which is particularly bad if the function is expensive or needs to access data. Adding the dependancies ensures react is aware of when to run the effect.
+
+
+How can improper use of useEffect cause performance issues?
+- If the useEffect is run too oftern or has the improper dependencies, it can lead to inefficiency in the app. An example of this would be: if the app is re-fetching data after each render or setting up multiple event listeners; which can lead to memory leaks and lag within the app. It is necessary to ensure the useEffect is used properly so that the component doesn't have to repeat the work which has previously been completed.
+
