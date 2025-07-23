@@ -1,0 +1,2 @@
+What are the advantages of client-side routing?
+- Client-side routining allows for more effieicent and smooth navigation between pages of the app. This is because the browser doesn't have to load the entire page from the server, but only parts of the content update. This enhnaces the user experience with features such as animations and tranistions between the pages whilst also maintainiong the state of the app. 
