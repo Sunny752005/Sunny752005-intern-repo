@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './Introduction-to-Redux-Toolkit/App';
-import store from './Introduction-to-Redux-Toolkit/store';
-import { Provider } from 'react-redux';
+import App from './Working-with-Lists-User-Input/App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <App />
   </React.StrictMode>
 );
