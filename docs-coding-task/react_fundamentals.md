@@ -20,3 +20,7 @@ What are some potential pitfalls?
 - Some of the pitfalls for Tailwind are: it can lead to a messy JSX, because long chains of class names clutter the code, they reduce readability. Also given the large number of utility classes, it can be overwhelming to memorise. Also whithout the use of helper libraries sich as clsx, the same utility classes can be repeated in difrent components which can make the code dificult to manage. 
 
 
+//////////Handling State & User Input///////////////
+
+What happens if we modify state directly instead of using setState?
+- If we modify the state dierectly instead of using setState, react wornt detect the change and thus will not re-render the component. Meaning the UI will not update to reflect the change. This will lead to inconsistencies between what the user sees and the actual state of the app. 
