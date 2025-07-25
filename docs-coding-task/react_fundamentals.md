@@ -24,3 +24,10 @@ What are some potential pitfalls?
 
 What happens if we modify state directly instead of using setState?
 - If we modify the state dierectly instead of using setState, react wornt detect the change and thus will not re-render the component. Meaning the UI will not update to reflect the change. This will lead to inconsistencies between what the user sees and the actual state of the app. 
+
+
+//////////Understanding Components & Props/////////
+
+Why are components important in React?
+- Component allow developers to break user interface into independant reusable pieces that have their own logic and renderind and can be managed independantly. This structure makes the code easier to not only maintian and test but also scale in the future as needs change. Instead of repeacting the code for similar/same UI elements, a component can be created and called whenever needed.  
+
