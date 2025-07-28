@@ -31,3 +31,9 @@ What happens if we modify state directly instead of using setState?
 Why are components important in React?
 - Component allow developers to break user interface into independant reusable pieces that have their own logic and renderind and can be managed independantly. This structure makes the code easier to not only maintian and test but also scale in the future as needs change. Instead of repeacting the code for similar/same UI elements, a component can be created and called whenever needed.  
 
+
+
+/////////Setting up a React project//////////
+
+What challenges did you face during setup?
+- I struggled with the tailwind download and setup, for some reason the tailwind setup wasn't working effectively and the files wernt created, thus I had to manually make the files and seed them with the code required to make tailwind work. 
