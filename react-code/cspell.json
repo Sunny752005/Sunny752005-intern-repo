@@ -1,0 +1,35 @@
+{
+  "version": "0.2",
+  "language": "en-AU",
+  "useGitignore": true,
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.git/**",
+    "**/.husky/**",
+    ".github/**"
+  ],
+  "dictionaries": ["en_US", "softwareTerms", "filetypes", "node", "npm"],
+  "words": [
+    "Formik",
+    "Tailwind",
+    "Redux",
+    "Axios",
+    "i18next",
+    "i18n",
+    "Monash",
+    "MIG",
+    "GIG",
+    "Jetpack",
+    "Room",
+    "MVVM",
+    "NutriCoach",
+    "FruityVice",
+    "AuthManager",
+    "NavigationBar",
+    "Vite",
+    "TypeScript"
+  ],
+  "flagWords": ["hte", "teh"]
+}

@@ -1,0 +1,5 @@
+
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Running pre-commit checks (markdownlint + cspell on staged Markdown)…"
+npx lint-staged

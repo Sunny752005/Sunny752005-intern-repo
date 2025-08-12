@@ -1,0 +1,28 @@
+name: CI – Markdown & Spelling
+
+on:
+  pull_request:
+    branches: ["**"]
+  push:
+    branches: ["main", "master"]
+
+jobs:
+  docs-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dev tools
+        run: npm install
+
+      - name: Lint Markdown
+        run: npm run lint:md
+
+      - name: Spell check Markdown
+        run: npm run
