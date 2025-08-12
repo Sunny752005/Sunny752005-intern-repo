@@ -9,7 +9,6 @@ Unit testing is an essential commpponent in software development as it ensures i
 - Improve code readability and its modular design.
 - Serve as documentation for what the function is supposed to do.
 
-
 Chosen Testing Framework: Jest
 
 For this project, I used Jest as the unit testing framework since it's:
@@ -18,23 +17,22 @@ For this project, I used Jest as the unit testing framework since it's:
 - Built in support for mocking and asynchronous tests.
 - Simple syntax and great developer experience.
 
-
-
-
 //////////Handling Errors & Edge Cases/////////
 
 Original code with bad error handling:
 
 ###
+
 export function formatName(user) {
   return `${user.firstName} ${user.lastName}`;
 }
-####
 
+####
 
 Refactored code:
 
 ####
+
 export function formatName(user) {
   if (!user || typeof user !== 'object') {
     throw new Error('Invalid user object');
@@ -51,8 +49,6 @@ export function formatName(user) {
 
 ####
 
-
-
 Refactoring for Better Error Handling
 
 Original Problem:
@@ -63,14 +59,12 @@ TypeError: Cannot read properties of undefined
 
 Which would eventually crash the app.
 
-
 Refactored Version with Guard Clauses
 
 To fix this issue I was having, a guard clauses was added at the start of the function to:
 
 - Check if `user` is an object
 - Check if `firstName` and `lastName` are present
-
 
 Guard clauses are a clean and easy meathod to catch errors early and exit before the function runs preventing any crash. This makes code: easier to debug and safer to use and more maintainable.
 

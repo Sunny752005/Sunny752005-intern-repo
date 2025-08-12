@@ -25,4 +25,4 @@ jobs:
         run: npm run lint:md
 
       - name: Spell check Markdown
-        run: npm run
+        run: npm run lint:spell

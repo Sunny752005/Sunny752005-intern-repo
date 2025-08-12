@@ -2,7 +2,7 @@ Debugging Practice – Mutating Props
 
 //////🐛 What was the issue?/////
 
-The issue wass in the component `BuggyMutatingProps`, where the child component directly chnaged the `state` object received from its parent. 
+The issue wass in the component `BuggyMutatingProps`, where the child component directly chnaged the `state` object received from its parent.
 
 ```jsx
 function Child({ state }) {
@@ -19,14 +19,11 @@ function Child({ state }) {
 
 This is a React anti-pattern. Since JavaScript objects are passed by reference, mutating the `state.count` inside the child coponentt was altering the parent’s state object. Thus as a result, with every click on the “Increment” button caused unexpected chnages in the numbers, like increasing the count by 10 or more instead of 1.
 
-
-
 /////////🔍 What debugging method did you use?//////////
 
 1. Visual inspection – I clicked the "Increment" button and noticed the count increased way more than expected.
 2. Console logging – I added `console.log(state)` inside the child component to confirm that `state.count` was being mutated directly.
 3. React DevTools – Inspected the component tree and props to verify that the mutation was being passed back up to the parent.
-
 
 //////How did you resolve the problem?///////
 
@@ -44,8 +41,6 @@ function Child({ state }) {
 ```
 
 This stops the original `state` object from being chnaged, keeping the parent’s state untouched.
-
-
 
 ///////////Final Working Components///////////
 

@@ -1,4 +1,4 @@
-React + Tailwind CSS Project Setup 
+React + Tailwind CSS Project Setup
 
 1. Clone and Install
 (bash)
@@ -24,11 +24,11 @@ Step 3: Initialize Tailwind configuration
 (bash)
 npx tailwindcss init -p
 
-
 Step 4: Update tailwind.config.js
 Replace the file content with:
 
 ###
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -40,21 +40,25 @@ export default {
   },
   plugins: [],
 }
+
 ###
 
 Step 5: Update index.css
 Clear the existing styles and replace with Tailwind directives:
 
 ###
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 ###
 
 Step 6: Import index.css in main.jsx
 Ensure your Tailwind styles are included in the project.
 
 ####
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
@@ -68,10 +72,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 ###
 
-
-4.  How to Verify It Works
+4. How to Verify It Works
     You can test Tailwind by adding a utility class to any element. For example:
-
-
 
 <h1 className="text-4xl font-bold">Tailwind is working!</h1>

@@ -1,8 +1,24 @@
 {
+  "name": "sunny752005-intern-repo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint:md": "markdownlint \"**/*.md\" --config .markdownlint.json",
+    "lint:spell": "cspell --no-progress --no-summary --relative --show-context --config ./cspell.json \"**/*.md\"",
+    "lint": "npm run lint:md && npm run lint:spell",
+    "prepare": "husky install"
+  },
   "devDependencies": {
     "cspell": "^9.2.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.5",
     "markdownlint-cli": "^0.45.0"
+  },
+  "lint-staged": {
+    "*.md": [
+      "markdownlint --config .markdownlint.json --fix",
+      "cspell --no-progress --no-summary --config ./cspell.json"
+    ]
   }
 }
