@@ -246,3 +246,54 @@ How did refactoring improve readability?
 2. Reduced mental load/memorisation on the developer side as names like `orderId`, `timeoutMs`, and `canRetry` are clear.
 3. Consistent naming patterns make the code easier to scan, understand, and maintain.
 4. Safer changes, as responsibilities and purposes are obvious from the names themselves.
+
+
+
+///////////////Understanding Clean Code Principles/////////////
+
+Simplicity:
+- Straightforward logic instead of clever tricks.
+- Remove dead code, unused params, extra layers.
+- Build what’s needed now, not anyhthing that is needed in the future.
+
+Readability:
+- Clear names, small functions, linear flows.
+- Early returns over deep nesting.
+- Comments explain why, not what.
+
+Maintainability:
+- One responsibility per function/module.
+- Separate pure logic from I/O/UI.
+- Tests for key paths and the edge cases.
+
+Consistency:
+- Follow project style (naming, imports, error handling).
+- Reuse shared utilities.
+- Auto‑format and lint.
+
+Efficiency:
+- Choose the right data structures and avoid the obvious N² hotspots.
+- Focus on real hot paths.
+- Prevent unnecessary allocations/DOM/state churn.
+
+
+Messy Code:
+- Vague names (e.g., `a`, `b`, `temp`) make it difficult to understand intent.
+- Deep nesting with more than once inline conditionals.
+- Magic numbers/strings spread throughout the code.
+- Inconsistent return types (sometimes number, sometimes object) which makes callers fragile.
+
+
+
+Clean Rewrite: 
+- Clear naming using terms like `records`, `accountId`, `totalValue` for calarity.
+- Separated the concerns that were all preiously mashed together: small helpers for eligibility checks, sorting/formatting, and aggregation.
+- Consistent return shape as it is always an object with `count`, `averagePrice`, `lines` now.
+- Early returns to avoid nested `if` pyramids.
+
+Tie‑back to principles
+- Simplicity: shorter functions, fewer branches.
+- Readability: intent visible from names/structure; less comments needed.
+- Maintainability: changes isolated
+- Consistency: one filter/comparator used everywhere.
+- Efficiency: streamlined flow, measured where it matters.
