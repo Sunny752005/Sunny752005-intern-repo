@@ -106,3 +106,79 @@ After: I split responsibilities into samller and focused functions:
 - Extensibility: Adding a new discount or tax rule means editing a small part of the code.
 
 
+
+
+//////////////////////Avoiding Code Duplication//////////////////////
+
+---- Removing Duplication----
+
+The issue with the duplicated code:
+1. I had an error when logging in two places -> The axios interceptor and the component they both printed the same thing.
+2. Meaning if I wanted to change the log format, it meant that I would have had to update it in multiple spots.
+3. This repetition adds not only extra steps on my end when trying to perform a task, it also made the system dificult to maintain and scale in the long run. 
+
+How refactoring improved the maintainability:
+1. I centralised logging inside the interceptor, meaning the components didnt have to repeat that.
+2. The components are now responsible for altering the UI message, and the logging happens all in one place.
+3. Making the code shorter, cleaner, and easier to update.
+
+
+###
+----Before----
+
+// inside interceptor
+api.interceptors.response.use(
+  res => res,
+  err => {
+    console.error('API Error:', err.message);
+    return Promise.reject(err);
+  }
+);
+
+// inside component
+try {
+  const res = await api.post('/posts', {...});
+} catch (err) {
+  console.error('Request failed:', err.message); // duplicate
+}
+###
+
+###
+------After--------
+
+// interceptor handles logging
+api.interceptors.response.use(
+  res => res,
+  err => {
+    console.error('API Error:', err.message);
+    return Promise.reject(err);
+  }
+);
+
+// component only shows UI error, no duplicate log
+try {
+  const res = await api.post('/posts', {...});
+} catch {
+  ui.showError("Could not complete request");
+}
+###
+
+
+
+
+
+/////////////////Commenting & Documentation///////////////
+----Commenting & Documentation – Reflection----
+
+When should you add comments?
+1. To explain "why" something is done/certain code is added, and removes the need for a person having to figure it out on their own.
+2. To point out trade-offs or edge cases for example why we ignore empty input.
+3. To help future readers with understanding core fundamentals used and their reson for use. 
+4. To clarify decisions made that aren’t obvious from the function or variable names.
+
+When should you avoid comments and instead improve the code?
+1. If the comment just repeats what the code already says, and thus we should make the code clearer instead.
+2. If the code is too long/complex we should break it into smaller functions that also helps with future maintainability as well as making the code cleaner.
+3. If comments are needed to explain confusing variable names, we should rename the variables properly.
+4. If the comment risks becoming outdated or misleading as the sytem development progresses we should restructure the code so it’s self-explanatory/ easier to understand.
+
