@@ -206,3 +206,43 @@ Common refactoring techniques used:
 - Replaced the Nested Conditionals with Named Functions
 - Improved Names meaningfully so functions describe intent of the code instead.
 
+
+
+
+//////////////Naming Variables & Functions///////////////
+
+What makes a good variable or function name?
+1. Clear and specific: the name says exactly what it holds/does.
+2. Consistent style: follows the same style throughout the codebase (e.g., camelCase, snake_case).
+3. Uses domain terms: match the problem space.
+4. Includes units/qualifiers when relevant or needed: `timeoutMs`, `priceAUD`.
+5. Verbs for functions, nouns for data: `loadUser()`, `userProfile`.
+6. Boolean names read as true/false: `isEmpty`, `hasError`, `canRetry`.
+
+
+----before-----
+function fn(arr, x) {
+  const temp = arr.filter(i => i.a === x);
+  const res = temp.map(y => y.v).reduce((p, c) => p + c, 0);
+  return res;
+}
+
+----✅ after-----
+function sumValuesByAccountId(records, accountId) {
+  const matching = records.filter(r => r.accountId === accountId);
+  const values = matching.map(r => r.value);
+  const totalValue = values.reduce((sum, v) => sum + v, 0);
+  return totalValue;
+}
+
+What issues can arise from poorly named variables?
+1. Misunderstandings that can lead to misinterpretations of what the function does and thus errors in the long run.
+2. Slower code reviews and onboarding because intent isn’t clear and thus requires more explanation/comments
+3. Duplicate logic if new developers don’t realise similar code already exists.
+4. Risky edits as changes can be applied to the wrong part of the codebase due to unclear names.
+
+How did refactoring improve readability?
+1. Variable and function names now show the intent without needing extra comments.
+2. Reduced mental load/memorisation on the developer side as names like `orderId`, `timeoutMs`, and `canRetry` are clear.
+3. Consistent naming patterns make the code easier to scan, understand, and maintain.
+4. Safer changes, as responsibilities and purposes are obvious from the names themselves.
