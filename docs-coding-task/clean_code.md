@@ -182,3 +182,27 @@ When should you avoid comments and instead improve the code?
 3. If comments are needed to explain confusing variable names, we should rename the variables properly.
 4. If the comment risks becoming outdated or misleading as the sytem development progresses we should restructure the code so it’s self-explanatory/ easier to understand.
 
+
+
+//////////// Refactoring Code for Simplicity////////////
+
+
+What made the original code complex?
+1. Mixed concerns: filtering, sorting, formatting, and rendering were all part of a single component.
+2. Deep nesting and inline conditionals made the flow of the code hard to follow and understand.
+3. Repeated checks (search/priority) lead to duplicated logic and inconsistency within the code.
+5. Improper naming conventions did a poor job at explaining intent, so comments were needed to explain the obvious things.
+
+How did refactoring improve it?
+1. Separated all the code from one large component to smaller increments that complete specific tasks.
+2. Early returns and named helpers get rid of the need for branches and make the flow readable.
+3. Single source of truth for business rules such as filters & sort comparators.
+4. Pure data transformation so that the behavior is predictable and testable.
+5. Smaller and self‑documenting functions are used that make it easier to maintain and safer to change the code.
+
+Common refactoring techniques used:
+- Extract Function (pulled out `matchesQuery`, `matchesPriority`, `makeComparator`, `formatTaskLabel`)
+- Separated the Pure Logic from I/O/UI.
+- Replaced the Nested Conditionals with Named Functions
+- Improved Names meaningfully so functions describe intent of the code instead.
+
