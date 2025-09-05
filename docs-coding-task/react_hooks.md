@@ -39,3 +39,7 @@ What happens if you don’t provide a dependency array?
 How can improper use of useEffect cause performance issues?
 
 - If the useEffect is run too oftern or has the improper dependencies, it can lead to inefficiency in the app. An example of this would be: if the app is re-fetching data after each render or setting up multiple event listeners; which can lead to memory leaks and lag within the app. It is necessary to ensure the useEffect is used properly so that the component doesn't have to repeat the work which has previously been completed.
+
+
+
+This line was added on feature-test-branch.
