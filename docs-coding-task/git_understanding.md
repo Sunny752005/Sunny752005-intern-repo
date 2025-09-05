@@ -10,7 +10,8 @@
 - As the commits build up they create a searchable history of the project that explains why decisions were made.  
 
 3. How can poor commit messages cause issues later?  
-- Vague messages like “fixed stuff” make it difficult to trace the cause of bugs.  
-- Without context, future developers may repeat mistakes or undo important fixes.  
-- Inconsistent messages can break automation tools that depend on structured commit history.  
-- Overall, poor commit practices increase technical debt and slow down collaboration.
+- Vague messages like “fixed stuff” make it difficult to figure out what bug was fixed later down the line.  
+- Without context/history of changes the future developers may repeat mistakes or undo important fixes.  
+- Inconsistent messages can cause issues with automation tools that depend on structured commit history.  
+- Overall, poor commit messages can increase technical soundness of the project and slow down collaboration and team members are unsure of others changes/work.
+s 
