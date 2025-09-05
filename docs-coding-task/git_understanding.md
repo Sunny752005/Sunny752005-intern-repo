@@ -5,10 +5,9 @@
 - Using a consistent structure (such as Conventional Commits) makes the commit history consistent and thus easier to scan and understand.
 
 2. How does a clear commit message help in team collaboration?  
-- Clear commit messages let teammates quickly understand what changed without reading the full diff.  
-- They speed up reviews because intent is obvious, reducing back-and-forth questions.  
-- Over time, they create a searchable project history that explains why decisions were made.  
-- Consistency also supports automated workflows like changelog generation and release notes.
+- Clear commit messages allow for teammates to quickly identify and understand what changes have been made, without the need to read/scan the whole document for changes.  
+- They also speed up the review process as it makes the intent clear.  
+- As the commits build up they create a searchable history of the project that explains why decisions were made.  
 
 3. How can poor commit messages cause issues later?  
 - Vague messages like “fixed stuff” make it difficult to trace the cause of bugs.  
