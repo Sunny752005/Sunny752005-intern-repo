@@ -39,4 +39,21 @@
 - With an automated test (`git bisect run`), Git can find the faulty commit much faster and with less effort.  
 
 
+/////////Branching & Team Collaboration//////////
+
+1. Why is pushing directly to main problematic?  
+- It can break the main branch due to untested or incomplete changes to the codebase.  
+- Main should always be stable so others can safely build on it and add changes as per their progress.  
+- Mistakes on main can disrupt CI/CD pipelines or production releases due to faulty code.
+
+2. How do branches help with reviewing code?  
+- Branches isolate changes from the main codebase, which makes it easy to open pull requests.  
+- Teammates can review the differences made, comment on them, and test the changes before merging.  
+- This improves quality and reduces the chance of bugs entering main branch and affecting the whole codebase.
+
+3. What happens if two people edit the same file on different branches?  
+- Git will try to merge them automatically.  
+- If the same lines are edited on different branches, Git raises a merge conflict.  
+- Developers then resolve the conflict by manually deciding which edits to keep.
+
 
