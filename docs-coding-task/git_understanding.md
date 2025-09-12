@@ -67,3 +67,15 @@ Git does this in order to give the developers more control over the changes that
 3. When would you want to stage changes without committing?
 Staging can be useful when mutiple changeas to the files have been made but the deveoper only decides to commit parts of the changes for now which can be sue to multiple reasons eg, testing to 
 see if the changes work as expected or if they want to break up a large change into smaller, more manageable commits.
+
+
+
+///////Merge Conflicts & Conflict Resolution //////
+1. What caused the conflict?
+The conflict occurred because I added 2 different lines in docs-coding-task/ai_tools.md on two branches (main and conflict-demo). When I merged, Git couldn’t safely pick one version, so it highlighted the changes and asked me to pick one/decide what to keep.
+
+2. How did I resolve it?
+I opened the file in VS Code, compared the two versions, and used the merge controls to choose what to keep. After removing the conflict markers and cleaning up the text, I staged the file and completed the merge with a commit.
+
+3. What did I learn?
+Merge conflicts are a normal part of collaboration in Git and they can arise time to time when multiple people edit the same lines/files. Thus keeping commits small and communicating changes reduces conflicts amongst the teams.
