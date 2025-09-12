@@ -6,3 +6,7 @@ Co-pilot worked well for generating the code I used for this task and small fixe
 
 3. When do you think AI is most useful for coding?
 AI is most useful for generating repetitive code, providing quick examples, and spotting simple bugs early. It can also speed up learning new concepts by generating small code examples which are in context to what I want to learn. However, for complex debugging, architectural decisions, or tasks that require full project context, AI tools may not be as effective.
+
+
+
+This is the branch version of the line.
