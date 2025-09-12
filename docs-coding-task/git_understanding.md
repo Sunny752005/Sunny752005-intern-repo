@@ -57,3 +57,13 @@
 - Developers then resolve the conflict by manually deciding which edits to keep.
 
 
+/////////Git Concepts: Staging vs. Committing//////
+1. What is the difference between staging and committing?
+Staging is when you pick the file you habve made changes to for the next commit to the repository. The changes are then place on the stage but are not permantly saved. Committing the changes then makes those chnages permantely part of the repository history with a message, making them part of the project timeline.
+
+2. Why does Git separate these two steps?
+Git does this in order to give the developers more control over the changes that have been made and whether or not they want to include them permanently in the project history. This allows for more focused commits which are much easier to understand and gives the developer a chance to review the changes before they are finalised.
+
+3. When would you want to stage changes without committing?
+Staging can be useful when mutiple changeas to the files have been made but the deveoper only decides to commit parts of the changes for now which can be sue to multiple reasons eg, testing to 
+see if the changes work as expected or if they want to break up a large change into smaller, more manageable commits.
